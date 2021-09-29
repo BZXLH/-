@@ -1,0 +1,14 @@
+//链表修改 
+
+link *ChaLink(link *head,int n,int x)
+{
+	link *p= head;
+	for(int i= 1;i<=n;i++)
+	{
+		p= p->next;
+		if(p==NULL)
+			return head;
+	}
+	p->ele= x;
+	return head;
+} 
