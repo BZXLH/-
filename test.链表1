@@ -1,7 +1,4 @@
 //初始化链表 
-#include<bits/stdc++.h>
-using namespace std;
-
 struct link
 {
 	int ele;
@@ -20,9 +17,4 @@ link *SetLink(int Long)
 		q= p;
 	}
 	return head;
-}
-
-int main()
-{
-	SetLink(5);
 }
