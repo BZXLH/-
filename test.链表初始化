@@ -5,13 +5,14 @@ struct link
 	link *next;
 };
 
-link *SetLink(int Long)
+link *SetLink(int Long,int x= 0)
 {
 	link *head= new link();
 	link *q= head;
 	for(int i= 1;i<=Long;i++)
 	{
 		link *p= new link();
+		p->ele= x;
 		p->next= NULL;
 		q->next= p;
 		q= p;
