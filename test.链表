@@ -1,0 +1,28 @@
+//初始化链表 
+#include<bits/stdc++.h>
+using namespace std;
+
+struct link
+{
+	int ele;
+	link *next;
+};
+
+link *SetLink(int Long)
+{
+	link *head= new link();
+	link *p= head;
+	for(int i= 1;i<=Long;i++)
+	{
+		link *p2= new link();
+		p2->next= NULL;
+		p->next= p2;
+		p= p2;
+	}
+	return head;
+}
+
+int main()
+{
+	SetLink(5);
+}
