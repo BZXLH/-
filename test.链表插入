@@ -1,0 +1,19 @@
+//链表插入操作
+
+link *AddLink(link *head,int n,int x)
+{
+	link *q= head;
+	link *p= head;
+	for(int i= 1;i<=n;i++)
+	{
+		q= p;
+		p= p->next;
+		if(p==NULL)
+			return head;
+	}
+	link *add= new link();
+	add->ele= x;
+	q->next= add;
+	add->next= p;
+	return head;
+} 
