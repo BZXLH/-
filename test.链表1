@@ -11,13 +11,13 @@ struct link
 link *SetLink(int Long)
 {
 	link *head= new link();
-	link *p= head;
+	link *q= head;
 	for(int i= 1;i<=Long;i++)
 	{
-		link *p2= new link();
-		p2->next= NULL;
-		p->next= p2;
-		p= p2;
+		link *p= new link();
+		p->next= NULL;
+		q->next= p;
+		q= p;
 	}
 	return head;
 }
